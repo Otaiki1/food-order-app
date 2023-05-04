@@ -33,8 +33,8 @@ export default function CartProvider(props) {
   };
 
   const cartContext = {
-    items: [],
-    totalAmount: 0,
+    items: cartState.items,
+    totalAmount: cartState.totalAmount,
     addItem: addItemToCartHandler,
     removeItem: removeItemFromCartHandler,
   };
